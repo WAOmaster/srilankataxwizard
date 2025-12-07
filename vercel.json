@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "sri-lanka-tax-wizard",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "regions": [
+    "sin1",
+    "bom1",
+    "cdg1"
+  ]
+}

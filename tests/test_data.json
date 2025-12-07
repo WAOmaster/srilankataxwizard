@@ -1,0 +1,95 @@
+{
+    "valid_users": [
+        {
+            "name": "Ashan Perera",
+            "tin": "123456789",
+            "email": "ashan@example.com",
+            "income": "1000000",
+            "expectedTax": 0,
+            "description": "Below tax-free threshold"
+        },
+        {
+            "name": "Nimalka Silva",
+            "tin": "987654321",
+            "email": "nimalka@example.lk",
+            "income": "1500000",
+            "expectedTax": 15000,
+            "description": "Just above threshold"
+        },
+        {
+            "name": "Rajesh Kumar",
+            "tin": "555666777",
+            "email": "rajesh@test.com",
+            "income": "5000000",
+            "expectedTax": 750000,
+            "description": "High income earner"
+        }
+    ],
+    "invalid_inputs": {
+        "empty_name": "",
+        "invalid_tin_short": "12345",
+        "invalid_tin_long": "1234567890",
+        "invalid_email": "notanemail",
+        "negative_income": "-1000",
+        "zero_income": "0"
+    },
+    "languages": [
+        "en",
+        "si",
+        "ta"
+    ],
+    "translation_keys": [
+        "step1_title",
+        "step2_title",
+        "step3_title",
+        "step4_title",
+        "step5_title",
+        "lbl_name",
+        "lbl_tin",
+        "lbl_email",
+        "lbl_income",
+        "btn_next",
+        "btn_back",
+        "err_required",
+        "err_invalid_tin",
+        "err_invalid_email"
+    ],
+    "viewports": {
+        "mobile": [
+            {
+                "width": 375,
+                "height": 667,
+                "name": "iPhone SE"
+            },
+            {
+                "width": 414,
+                "height": 896,
+                "name": "iPhone 11 Pro Max"
+            }
+        ],
+        "tablet": [
+            {
+                "width": 768,
+                "height": 1024,
+                "name": "iPad"
+            },
+            {
+                "width": 1024,
+                "height": 1366,
+                "name": "iPad Pro"
+            }
+        ],
+        "desktop": [
+            {
+                "width": 1280,
+                "height": 720,
+                "name": "HD"
+            },
+            {
+                "width": 1920,
+                "height": 1080,
+                "name": "Full HD"
+            }
+        ]
+    }
+}
